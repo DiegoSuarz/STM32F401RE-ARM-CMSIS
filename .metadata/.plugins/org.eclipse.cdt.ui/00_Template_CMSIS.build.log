@@ -1,0 +1,10 @@
+21:26:53 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
+make -j2 all 
+arm-none-eabi-size   00_Template_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
+Finished building: default.size.stdout
+ 
+
+21:26:53 Build Finished. 0 errors, 0 warnings. (took 426ms)
+

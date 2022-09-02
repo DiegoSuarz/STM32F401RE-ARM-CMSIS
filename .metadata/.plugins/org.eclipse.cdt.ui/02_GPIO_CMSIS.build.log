@@ -1,0 +1,17 @@
+21:26:54 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/02_GPIO_CMSIS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/02_GPIO_CMSIS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "02_GPIO_CMSIS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\02_GPIO_CMSIS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_GPIO_CMSIS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_GPIO_CMSIS.elf
+ 
+arm-none-eabi-size   02_GPIO_CMSIS.elf 
+arm-none-eabi-objdump -h -S  02_GPIO_CMSIS.elf  > "02_GPIO_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_GPIO_CMSIS.list
+ 
+
+21:26:55 Build Finished. 0 errors, 0 warnings. (took 1s.265ms)
+
