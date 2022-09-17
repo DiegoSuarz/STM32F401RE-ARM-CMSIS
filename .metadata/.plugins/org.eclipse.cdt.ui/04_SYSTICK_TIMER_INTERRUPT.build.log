@@ -1,4 +1,4 @@
-22:28:20 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
+22:52:34 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
 make -j2 all 
 arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf
 Finished building: default.size.stdout
  
 
-22:28:21 Build Finished. 0 errors, 0 warnings. (took 485ms)
+22:52:34 Build Finished. 0 errors, 0 warnings. (took 262ms)
 

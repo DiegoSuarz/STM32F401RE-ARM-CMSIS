@@ -1,0 +1,12 @@
+C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/07_USART_LIB/Drivers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/07_USART_LIB/Drivers/CMSIS/Include/core_cm4.h:1724:22:__NVIC_DisableIRQ	16	static,ignoring_inline_asm
+C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/07_USART_LIB/Drivers/CMSIS/Include/core_cm4.h:1816:22:__NVIC_SetPriority	16	static
+../Core/Src/USART_LIB.c:17:6:USART_Init	288	static
+../Core/Src/USART_LIB.c:45:6:USART_SendData	32	static
+../Core/Src/USART_LIB.c:79:6:USART_ReceiveData	32	static
+../Core/Src/USART_LIB.c:111:6:USART_IRQInterruptConfig	16	static
+../Core/Src/USART_LIB.c:121:6:USART_IRQPriorityConfig	16	static
+../Core/Src/USART_LIB.c:131:9:USART_SendDataIT	32	static
+../Core/Src/USART_LIB.c:149:9:USART_ReceiveDataIT	32	static
+../Core/Src/USART_LIB.c:166:6:USART_IRQHandling	32	static
+../Core/Src/USART_LIB.c:339:13:USART_ApplicationEventCallback	16	static

@@ -1,373 +1,240 @@
-22:06:43 **** Incremental Build of configuration Debug for project 06_USART ****
+22:37:39 **** Build of configuration Debug for project 08_TIMERS ****
 make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:61:8: warning: '%s' directive writing up to 49 bytes into a region of size 46 [-Wformat-overflow=]
-   61 |  len = sprintf((char*)txBuffer, "RX->%s\r\n",rxBuffer); //reenviar lo que se recive por el usart2
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:61:8: note: 'sprintf' output between 7 and 56 bytes into a destination of size 50
-arm-none-eabi-gcc -o "06_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\06_USART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 06_USART.elf
- 
-arm-none-eabi-size   06_USART.elf 
-arm-none-eabi-objdump -h -S  06_USART.elf  > "06_USART.list"
-   text	   data	    bss	    dec	    hex	filename
-   4304	    112	   1688	   6104	   17d8	06_USART.elf
-Finished building: default.size.stdout
- 
-Finished building: 06_USART.list
- 
-22:07:50 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-size   06_USART.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4304	    112	   1688	   6104	   17d8	06_USART.elf
-Finished building: default.size.stdout
- 
-22:08:42 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-size   06_USART.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4304	    112	   1688	   6104	   17d8	06_USART.elf
-Finished building: default.size.stdout
- 
-22:12:52 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f401retx.d" -MT"Core/Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f401retx.o" "../Core/Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Core/Src/delay_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/delay_timer.d" -MT"Core/Src/delay_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/delay_timer.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+../Core/Src/main.c: In function 'TIM4_IRQHandler':
+../Core/Src/main.c:54:3: error: 'uwTick_tim' undeclared (first use in this function)
+   54 |   uwTick_tim += 1;
+      |   ^~~~~~~~~~
+../Core/Src/main.c:54:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+22:38:08 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
 make -j2 all 
 arm-none-eabi-size   00_Template_CMSIS.elf 
    text	   data	    bss	    dec	    hex	filename
     692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
 Finished building: default.size.stdout
  
-22:12:52 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
+22:38:09 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
 make -j2 all 
 arm-none-eabi-size   01_RCC_Config.elf 
    text	   data	    bss	    dec	    hex	filename
    1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
 Finished building: default.size.stdout
  
-22:12:53 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
+22:38:09 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
 make -j2 all 
 arm-none-eabi-size   02_GPIO_CMSIS.elf 
    text	   data	    bss	    dec	    hex	filename
     920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
 Finished building: default.size.stdout
  
-22:12:53 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
+22:38:09 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
 make -j2 all 
 arm-none-eabi-size   03_SYSTICK_TIMER.elf 
    text	   data	    bss	    dec	    hex	filename
    1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
 Finished building: default.size.stdout
  
-22:12:53 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
+22:38:10 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
 make -j2 all 
 arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
    text	   data	    bss	    dec	    hex	filename
    1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
 Finished building: default.size.stdout
  
-22:12:54 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
+22:38:10 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
 make -j2 all 
 arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
    text	   data	    bss	    dec	    hex	filename
    1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
 Finished building: default.size.stdout
  
-22:12:54 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:61:8: warning: '%s' directive writing up to 49 bytes into a region of size 46 [-Wformat-overflow=]
-   61 |  len = sprintf((char*)txBuffer, "RX->%s\r\n",rxBuffer); //reenviar lo que se recive por el usart2
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:61:8: note: 'sprintf' output between 7 and 56 bytes into a destination of size 50
-arm-none-eabi-gcc -o "06_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\06_USART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 06_USART.elf
- 
-arm-none-eabi-size   06_USART.elf 
-arm-none-eabi-objdump -h -S  06_USART.elf  > "06_USART.list"
-   text	   data	    bss	    dec	    hex	filename
-   4304	    112	   1688	   6104	   17d8	06_USART.elf
-Finished building: default.size.stdout
- 
-Finished building: 06_USART.list
- 
-22:13:10 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-size   06_USART.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4304	    112	   1688	   6104	   17d8	06_USART.elf
-Finished building: default.size.stdout
- 
-22:17:21 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   00_Template_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:17:22 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
-make -j2 all 
-arm-none-eabi-size   01_RCC_Config.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
-Finished building: default.size.stdout
- 
-22:17:22 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   02_GPIO_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:17:23 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
-make -j2 all 
-arm-none-eabi-size   03_SYSTICK_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
-Finished building: default.size.stdout
- 
-22:17:23 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
-make -j2 all 
-arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
-Finished building: default.size.stdout
- 
-22:17:24 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
-make -j2 all 
-arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
-Finished building: default.size.stdout
- 
-22:17:24 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:61:8: warning: '%s' directive writing up to 49 bytes into a region of size 46 [-Wformat-overflow=]
-   61 |  len = sprintf((char*)txBuffer, "RX->%s\r\n",rxBuffer); //reenviar lo que se recive por el usart2
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:61:8: note: 'sprintf' output between 7 and 56 bytes into a destination of size 50
-arm-none-eabi-gcc -o "06_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\06_USART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 06_USART.elf
- 
-arm-none-eabi-size   06_USART.elf 
-arm-none-eabi-objdump -h -S  06_USART.elf  > "06_USART.list"
-   text	   data	    bss	    dec	    hex	filename
-   4308	    112	   1688	   6108	   17dc	06_USART.elf
-Finished building: default.size.stdout
- 
-Finished building: 06_USART.list
- 
-22:17:28 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-size   06_USART.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4308	    112	   1688	   6108	   17dc	06_USART.elf
-Finished building: default.size.stdout
- 
-22:19:32 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   00_Template_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:19:32 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
-make -j2 all 
-arm-none-eabi-size   01_RCC_Config.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
-Finished building: default.size.stdout
- 
-22:19:33 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   02_GPIO_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:19:33 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
-make -j2 all 
-arm-none-eabi-size   03_SYSTICK_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
-Finished building: default.size.stdout
- 
-22:19:33 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
-make -j2 all 
-arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
-Finished building: default.size.stdout
- 
-22:19:34 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
-make -j2 all 
-arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
-Finished building: default.size.stdout
- 
-22:19:34 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:61:8: warning: '%s' directive writing up to 49 bytes into a region of size 46 [-Wformat-overflow=]
-   61 |  len = sprintf((char*)txBuffer, "RX->%s\r\n",rxBuffer); //reenviar lo que se recive por el usart2
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:61:8: note: 'sprintf' output between 7 and 56 bytes into a destination of size 50
-arm-none-eabi-gcc -o "06_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\06_USART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 06_USART.elf
- 
-arm-none-eabi-size   06_USART.elf 
-arm-none-eabi-objdump -h -S  06_USART.elf  > "06_USART.list"
-   text	   data	    bss	    dec	    hex	filename
-   4324	    112	   1688	   6124	   17ec	06_USART.elf
-Finished building: default.size.stdout
- 
-Finished building: 06_USART.list
- 
-22:19:38 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-size   06_USART.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4324	    112	   1688	   6124	   17ec	06_USART.elf
-Finished building: default.size.stdout
- 
-22:24:37 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   00_Template_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:24:37 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
-make -j2 all 
-arm-none-eabi-size   01_RCC_Config.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
-Finished building: default.size.stdout
- 
-22:24:37 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   02_GPIO_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:24:38 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
-make -j2 all 
-arm-none-eabi-size   03_SYSTICK_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
-Finished building: default.size.stdout
- 
-22:24:38 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
-make -j2 all 
-arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
-Finished building: default.size.stdout
- 
-22:24:39 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
-make -j2 all 
-arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
-Finished building: default.size.stdout
- 
-22:24:39 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:61:8: warning: '%s' directive writing up to 49 bytes into a region of size 46 [-Wformat-overflow=]
-   61 |  len = sprintf((char*)txBuffer, "RX->%s\r\n",rxBuffer); //reenviar lo que se recive por el usart2
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:61:8: note: 'sprintf' output between 7 and 56 bytes into a destination of size 50
-arm-none-eabi-gcc -o "06_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\06_USART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 06_USART.elf
- 
-arm-none-eabi-size   06_USART.elf 
-arm-none-eabi-objdump -h -S  06_USART.elf  > "06_USART.list"
-   text	   data	    bss	    dec	    hex	filename
-   7308	    112	   1688	   9108	   2394	06_USART.elf
-Finished building: default.size.stdout
- 
-Finished building: 06_USART.list
- 
-22:24:44 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-size   06_USART.elf 
-   text	   data	    bss	    dec	    hex	filename
-   7308	    112	   1688	   9108	   2394	06_USART.elf
-Finished building: default.size.stdout
- 
-22:28:19 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   00_Template_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:28:19 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
-make -j2 all 
-arm-none-eabi-size   01_RCC_Config.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
-Finished building: default.size.stdout
- 
-22:28:19 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
-make -j2 all 
-arm-none-eabi-size   02_GPIO_CMSIS.elf 
-   text	   data	    bss	    dec	    hex	filename
-    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
-Finished building: default.size.stdout
- 
-22:28:20 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
-make -j2 all 
-arm-none-eabi-size   03_SYSTICK_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
-Finished building: default.size.stdout
- 
-22:28:20 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
-make -j2 all 
-arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
-Finished building: default.size.stdout
- 
-22:28:21 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
-make -j2 all 
-arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
-Finished building: default.size.stdout
- 
-22:28:21 **** Incremental Build of configuration Debug for project 06_USART ****
-make -j2 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/06_USART/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:61:8: warning: '%s' directive writing up to 49 bytes into a region of size 46 [-Wformat-overflow=]
-   61 |  len = sprintf((char*)txBuffer, "RX->%s\r\n",rxBuffer); //reenviar lo que se recive por el usart2
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:61:8: note: 'sprintf' output between 7 and 56 bytes into a destination of size 50
-arm-none-eabi-gcc -o "06_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\06_USART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 06_USART.elf
- 
-arm-none-eabi-size   06_USART.elf 
-arm-none-eabi-objdump -h -S  06_USART.elf  > "06_USART.list"
-   text	   data	    bss	    dec	    hex	filename
-  17572	    476	   1692	  19740	   4d1c	06_USART.elf
-Finished building: default.size.stdout
- 
-Finished building: 06_USART.list
- 
-22:28:24 **** Incremental Build of configuration Debug for project 06_USART ****
+22:38:10 **** Incremental Build of configuration Debug for project 06_USART ****
 make -j2 all 
 arm-none-eabi-size   06_USART.elf 
    text	   data	    bss	    dec	    hex	filename
   17572	    476	   1692	  19740	   4d1c	06_USART.elf
 Finished building: default.size.stdout
+ 
+22:38:11 **** Incremental Build of configuration Debug for project 07_USART_LIB ****
+make -j2 all 
+arm-none-eabi-size   07_USART_LIB.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5724	    108	   1660	   7492	   1d44	07_USART_LIB.elf
+Finished building: default.size.stdout
+ 
+22:38:11 **** Incremental Build of configuration Debug for project 08_TIMERS ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "08_TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\08_TIMERS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="08_TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 08_TIMERS.elf
+ 
+arm-none-eabi-size   08_TIMERS.elf 
+arm-none-eabi-objdump -h -S  08_TIMERS.elf  > "08_TIMERS.list"
+   text	   data	    bss	    dec	    hex	filename
+   1068	      8	   1568	   2644	    a54	08_TIMERS.elf
+Finished building: default.size.stdout
+ 
+Finished building: 08_TIMERS.list
+ 
+22:39:09 **** Incremental Build of configuration Debug for project 08_TIMERS ****
+make -j2 all 
+arm-none-eabi-size   08_TIMERS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1068	      8	   1568	   2644	    a54	08_TIMERS.elf
+Finished building: default.size.stdout
+ 
+22:39:46 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
+make -j2 all 
+arm-none-eabi-size   00_Template_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:39:47 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
+make -j2 all 
+arm-none-eabi-size   01_RCC_Config.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
+Finished building: default.size.stdout
+ 
+22:39:47 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
+make -j2 all 
+arm-none-eabi-size   02_GPIO_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:39:48 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
+make -j2 all 
+arm-none-eabi-size   03_SYSTICK_TIMER.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
+Finished building: default.size.stdout
+ 
+22:39:48 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
+make -j2 all 
+arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+22:39:49 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
+make -j2 all 
+arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
+Finished building: default.size.stdout
+ 
+22:39:49 **** Incremental Build of configuration Debug for project 06_USART ****
+make -j2 all 
+arm-none-eabi-size   06_USART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17572	    476	   1692	  19740	   4d1c	06_USART.elf
+Finished building: default.size.stdout
+ 
+22:39:50 **** Incremental Build of configuration Debug for project 07_USART_LIB ****
+make -j2 all 
+arm-none-eabi-size   07_USART_LIB.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5724	    108	   1660	   7492	   1d44	07_USART_LIB.elf
+Finished building: default.size.stdout
+ 
+22:39:50 **** Incremental Build of configuration Debug for project 08_TIMERS ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "08_TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\08_TIMERS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="08_TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 08_TIMERS.elf
+ 
+arm-none-eabi-size   08_TIMERS.elf 
+arm-none-eabi-objdump -h -S  08_TIMERS.elf  > "08_TIMERS.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1568	   2648	    a58	08_TIMERS.elf
+Finished building: default.size.stdout
+ 
+Finished building: 08_TIMERS.list
+ 
+22:39:53 **** Incremental Build of configuration Debug for project 08_TIMERS ****
+make -j2 all 
+arm-none-eabi-size   08_TIMERS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1568	   2648	    a58	08_TIMERS.elf
+Finished building: default.size.stdout
+ 
+22:52:32 **** Incremental Build of configuration Debug for project 00_Template_CMSIS ****
+make -j2 all 
+arm-none-eabi-size   00_Template_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+    692	      8	   1568	   2268	    8dc	00_Template_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:52:33 **** Incremental Build of configuration Debug for project 01_RCC_Config ****
+make -j2 all 
+arm-none-eabi-size   01_RCC_Config.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1104	     12	   1564	   2680	    a78	01_RCC_Config.elf
+Finished building: default.size.stdout
+ 
+22:52:33 **** Incremental Build of configuration Debug for project 02_GPIO_CMSIS ****
+make -j2 all 
+arm-none-eabi-size   02_GPIO_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+    920	      8	   1568	   2496	    9c0	02_GPIO_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:52:34 **** Incremental Build of configuration Debug for project 03_SYSTICK_TIMER ****
+make -j2 all 
+arm-none-eabi-size   03_SYSTICK_TIMER.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1208	     12	   1564	   2784	    ae0	03_SYSTICK_TIMER.elf
+Finished building: default.size.stdout
+ 
+22:52:34 **** Incremental Build of configuration Debug for project 04_SYSTICK_TIMER_INTERRUPT ****
+make -j2 all 
+arm-none-eabi-size   04_SYSTICK_TIMER_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1252	     12	   1572	   2836	    b14	04_SYSTICK_TIMER_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+22:52:34 **** Incremental Build of configuration Debug for project 05_EXTI_INTERRUPT_EXT ****
+make -j2 all 
+arm-none-eabi-size   05_EXTI_INTERRUPT_EXT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1068	      8	   1568	   2644	    a54	05_EXTI_INTERRUPT_EXT.elf
+Finished building: default.size.stdout
+ 
+22:52:35 **** Incremental Build of configuration Debug for project 06_USART ****
+make -j2 all 
+arm-none-eabi-size   06_USART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17572	    476	   1692	  19740	   4d1c	06_USART.elf
+Finished building: default.size.stdout
+ 
+22:52:35 **** Incremental Build of configuration Debug for project 07_USART_LIB ****
+make -j2 all 
+arm-none-eabi-size   07_USART_LIB.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5724	    108	   1660	   7492	   1d44	07_USART_LIB.elf
+Finished building: default.size.stdout
+ 
+22:52:35 **** Incremental Build of configuration Debug for project 08_TIMERS ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/delay_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/delay_timer.d" -MT"Core/Src/delay_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/delay_timer.o"
+arm-none-eabi-gcc -o "08_TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\08_TIMERS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="08_TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 08_TIMERS.elf
+ 
+arm-none-eabi-size   08_TIMERS.elf 
+arm-none-eabi-objdump -h -S  08_TIMERS.elf  > "08_TIMERS.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1568	   2648	    a58	08_TIMERS.elf
+Finished building: default.size.stdout
+ 
+Finished building: 08_TIMERS.list
  

@@ -1052,7 +1052,7 @@ int main(void)
  8000c68:	2102      	movs	r1, #2
  8000c6a:	480d      	ldr	r0, [pc, #52]	; (8000ca0 <main+0x90>)
  8000c6c:	f000 ff5e 	bl	8001b2c <iprintf>
-	printf("el numero pi vale: %f\n\r",3.1415);
+	printf("el numero pi vale: %f\n\r",3.1415);  //habilitar desde los ajustes para la impresion de flotantes
  8000c70:	a303      	add	r3, pc, #12	; (adr r3, 8000c80 <main+0x70>)
  8000c72:	e9d3 2300 	ldrd	r2, r3, [r3]
  8000c76:	480b      	ldr	r0, [pc, #44]	; (8000ca4 <main+0x94>)

@@ -1,0 +1,54 @@
+/*
+ * delay_timer.c
+ *
+ *  Created on: 15 set. 2022
+ *      Author: dg_su
+ */
+
+#include "delay_timer.h"
+
+/*function definition...................*/
+/*
+ * @brief: funcion para generar retardos en ms
+ * @param [ck_psc]: frecuencia de entrada al timer
+ */
+void Timer4_Init(uint32_t ck_psc){
+	uint32_t temp;
+
+	/*habilitar el reloj del bus que esta asociado el timer, para TIMER4 -> APB1*/
+	RCC->APB1ENR |= RCC_APB1ENR_TIM4EN;
+	TIM4->CR1 &= ~TIM_CR1_CEN; //deshabilitar TIMER4
+
+	/*generar retardo para 1ms*/
+	//calculo del prescaler
+	temp = ck_psc / 1000000UL;
+	TIM4->PSC = temp-1;
+
+	//calculo del valor de autorecarga (ARR)
+	TIM4->ARR = 1000 - 1;
+
+	/*Configurar interrupciones...........*/
+	TIM4->DIER |= TIM_DIER_UIE; //habilitar interrupcion por desbordamiento
+	NVIC_EnableIRQ(TIM4_IRQn);	//habilitar interrupcion NVIC del CPU para timer4
+
+	//activar timer
+	TIM4->CR1 |= TIM_CR1_CEN;
+
+}
+
+
+/*
+ * @brief: genera retardos en ms
+ * @param [ms]: retardo en ms deseado
+ */
+void Timer4_delayms(uint32_t ms){
+	uint32_t uwTick_tim;
+	uint32_t tickstart = uwTick_tim;
+	uint32_t wait = ms;
+
+	//generar retardo
+	while((uwTick_tim - tickstart) < wait);
+}
+
+
+

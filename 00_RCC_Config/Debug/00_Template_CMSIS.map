@@ -32,6 +32,15 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
  .text          0x0000000000000000        0x0 ./Core/Src/main.o
  .data          0x0000000000000000        0x0 ./Core/Src/main.o
  .bss           0x0000000000000000        0x0 ./Core/Src/main.o
@@ -255,12 +264,21 @@ Discarded input sections
  .text.SystemCoreClockUpdate
                 0x0000000000000000      0x100 ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000      0xa84 ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000       0x22 ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000       0x8e ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000       0x51 ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000      0x103 ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000       0x6a ./Core/Src/system_stm32f4xx.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000       0xd9 ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000     0x102d ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000      0x11f ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000     0xb86c ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/system_stm32f4xx.o
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f401retx.o
  .data          0x0000000000000000        0x0 ./Core/Startup/startup_stm32f401retx.o
  .bss           0x0000000000000000        0x0 ./Core/Startup/startup_stm32f401retx.o
@@ -588,35 +606,35 @@ LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_ranges  0x0000000000000010       0x18 ./Core/Src/system_stm32f4xx.o
  .debug_ranges  0x0000000000000028       0x20 ./Core/Startup/startup_stm32f401retx.o
 
-.debug_macro    0x0000000000000000     0xdb9a
- .debug_macro   0x0000000000000000       0x63 ./Core/Src/main.o
- .debug_macro   0x0000000000000063      0xa84 ./Core/Src/main.o
- .debug_macro   0x0000000000000ae7       0x22 ./Core/Src/main.o
- .debug_macro   0x0000000000000b09       0x8e ./Core/Src/main.o
- .debug_macro   0x0000000000000b97       0x51 ./Core/Src/main.o
- .debug_macro   0x0000000000000be8      0x103 ./Core/Src/main.o
- .debug_macro   0x0000000000000ceb       0x6a ./Core/Src/main.o
- .debug_macro   0x0000000000000d55      0x1df ./Core/Src/main.o
- .debug_macro   0x0000000000000f34       0xda ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x000000000000100e       0x28 ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x0000000000001036       0x28 ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x000000000000105e       0x1c ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x000000000000107a       0x22 ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x000000000000109c       0xd9 ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x0000000000001175     0x102d ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x00000000000021a2      0x11f ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x00000000000022c1     0xb86c ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x000000000000db2d       0x6d ./Core/Src/system_stm32f4xx.o
+.debug_macro    0x0000000000000000     0xdc05
+ .debug_macro   0x0000000000000000       0xce ./Core/Src/main.o
+ .debug_macro   0x00000000000000ce      0xa84 ./Core/Src/main.o
+ .debug_macro   0x0000000000000b52       0x22 ./Core/Src/main.o
+ .debug_macro   0x0000000000000b74       0x8e ./Core/Src/main.o
+ .debug_macro   0x0000000000000c02       0x51 ./Core/Src/main.o
+ .debug_macro   0x0000000000000c53      0x103 ./Core/Src/main.o
+ .debug_macro   0x0000000000000d56       0x6a ./Core/Src/main.o
+ .debug_macro   0x0000000000000dc0      0x1df ./Core/Src/main.o
+ .debug_macro   0x0000000000000f9f       0x28 ./Core/Src/main.o
+ .debug_macro   0x0000000000000fc7       0x28 ./Core/Src/main.o
+ .debug_macro   0x0000000000000fef       0x1c ./Core/Src/main.o
+ .debug_macro   0x000000000000100b       0x22 ./Core/Src/main.o
+ .debug_macro   0x000000000000102d       0xd9 ./Core/Src/main.o
+ .debug_macro   0x0000000000001106     0x102d ./Core/Src/main.o
+ .debug_macro   0x0000000000002133      0x11f ./Core/Src/main.o
+ .debug_macro   0x0000000000002252     0xb86c ./Core/Src/main.o
+ .debug_macro   0x000000000000dabe       0x6d ./Core/Src/main.o
+ .debug_macro   0x000000000000db2b       0xda ./Core/Src/system_stm32f4xx.o
 
-.debug_line     0x0000000000000000      0x958
- .debug_line    0x0000000000000000      0x37f ./Core/Src/main.o
- .debug_line    0x000000000000037f      0x550 ./Core/Src/system_stm32f4xx.o
- .debug_line    0x00000000000008cf       0x89 ./Core/Startup/startup_stm32f401retx.o
+.debug_line     0x0000000000000000      0xa90
+ .debug_line    0x0000000000000000      0x4b7 ./Core/Src/main.o
+ .debug_line    0x00000000000004b7      0x550 ./Core/Src/system_stm32f4xx.o
+ .debug_line    0x0000000000000a07       0x89 ./Core/Startup/startup_stm32f401retx.o
 
 .debug_str      0x0000000000000000    0x4f4b4
- .debug_str     0x0000000000000000     0x3ab2 ./Core/Src/main.o
-                                       0x3c0d (size before relaxing)
- .debug_str     0x0000000000003ab2    0x4b9cc ./Core/Src/system_stm32f4xx.o
+ .debug_str     0x0000000000000000    0x4f248 ./Core/Src/main.o
+                                      0x4f3a3 (size before relaxing)
+ .debug_str     0x000000000004f248      0x236 ./Core/Src/system_stm32f4xx.o
                                       0x4f5d7 (size before relaxing)
  .debug_str     0x000000000004f47e       0x36 ./Core/Startup/startup_stm32f401retx.o
                                          0x7a (size before relaxing)

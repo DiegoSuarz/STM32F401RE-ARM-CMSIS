@@ -1,0 +1,31 @@
+#ifndef INC_DELAY_TIMER_H_
+#define INC_DELAY_TIMER_H_
+
+/*includes............................*/
+#include <stm32f4xx.h>
+
+/*defines.............................*/
+
+/*variables............................*/
+extern volatile uint32_t uwTick_tim;
+
+/*function prototype...................*/
+/*
+ * @brief: funcion para generar retardos en ms
+ * @param [tick]: valor de recarga
+ */
+void Timer4_Init(uint32_t ck_psc);
+
+/*
+ * @brief: genera retardos en ms
+ * @param [ms]: retardo en ms deseado
+ */
+void Timer4_delayms(uint32_t ms);
+
+
+
+
+#endif /*INC_DELAY_TIMER_H_*/
+
+
+
