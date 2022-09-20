@@ -1,0 +1,5 @@
+1663540349074	Delete resource '00_Template_CMSIS2'
+1663639350204	Rename resource '11_ADC'
+1663641696000	Rename resource '12_ADC_ScanMode_Interrupt'
+1663644048807	Delete resource '14_ADC_ScanMode_TMR4Interrupt'
+1663644331359	Rename resource '14_ADC_SingleMode_TMR4_Interrpt'

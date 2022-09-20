@@ -1,0 +1,7 @@
+C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/13_ADC_ScanMode_Interrupt/Drivers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/13_ADC_ScanMode_Interrupt/Drivers/CMSIS/Include/core_cm4.h:1816:22:__NVIC_SetPriority	16	static
+../Core/Src/main.c:56:5:main	8	static
+../Core/Src/main.c:68:6:ADC_ScanModeInit	4	static
+../Core/Src/main.c:118:6:ADC_ReadScanMode	8	static
+../Core/Src/main.c:134:6:ADC_ConfigInterrupt	8	static
+../Core/Src/main.c:143:6:ADC_IRQHandler	4	static

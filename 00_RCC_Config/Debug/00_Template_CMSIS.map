@@ -25,6 +25,59 @@ Discarded input sections
  .ARM.exidx     0x0000000000000000       0x10 c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1c c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .group         0x0000000000000000        0xc ./Core/Src/delay.o
+ .text          0x0000000000000000        0x0 ./Core/Src/delay.o
+ .data          0x0000000000000000        0x0 ./Core/Src/delay.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/delay.o
+ .text.delay_init
+                0x0000000000000000       0x54 ./Core/Src/delay.o
+ .text.delay_us
+                0x0000000000000000       0x40 ./Core/Src/delay.o
+ .text.delay_ms
+                0x0000000000000000       0x2c ./Core/Src/delay.o
+ .debug_info    0x0000000000000000      0x182 ./Core/Src/delay.o
+ .debug_abbrev  0x0000000000000000      0x124 ./Core/Src/delay.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./Core/Src/delay.o
+ .debug_ranges  0x0000000000000000       0x20 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0xde ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000      0xa84 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0xd9 ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000     0x102d ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000      0x11f ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000     0xb86c ./Core/Src/delay.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/delay.o
+ .debug_line    0x0000000000000000      0x59e ./Core/Src/delay.o
+ .debug_str     0x0000000000000000    0x4f43e ./Core/Src/delay.o
+ .comment       0x0000000000000000       0x51 ./Core/Src/delay.o
+ .debug_frame   0x0000000000000000       0x80 ./Core/Src/delay.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Core/Src/delay.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -44,6 +97,22 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Core/Src/main.o
  .data          0x0000000000000000        0x0 ./Core/Src/main.o
  .bss           0x0000000000000000        0x0 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000      0xa84 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xd9 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000     0x102d ./Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x11f ./Core/Src/main.o
+ .debug_macro   0x0000000000000000     0xb86c ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/syscalls.o
  .group         0x0000000000000000        0xc ./Core/Src/syscalls.o
  .group         0x0000000000000000        0xc ./Core/Src/syscalls.o
@@ -340,6 +409,7 @@ Linker script and memory map
 LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
 LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+LOAD ./Core/Src/delay.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/syscalls.o
 LOAD ./Core/Src/sysmem.o
@@ -606,25 +676,9 @@ LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_ranges  0x0000000000000010       0x18 ./Core/Src/system_stm32f4xx.o
  .debug_ranges  0x0000000000000028       0x20 ./Core/Startup/startup_stm32f401retx.o
 
-.debug_macro    0x0000000000000000     0xdc05
+.debug_macro    0x0000000000000000      0x1a8
  .debug_macro   0x0000000000000000       0xce ./Core/Src/main.o
- .debug_macro   0x00000000000000ce      0xa84 ./Core/Src/main.o
- .debug_macro   0x0000000000000b52       0x22 ./Core/Src/main.o
- .debug_macro   0x0000000000000b74       0x8e ./Core/Src/main.o
- .debug_macro   0x0000000000000c02       0x51 ./Core/Src/main.o
- .debug_macro   0x0000000000000c53      0x103 ./Core/Src/main.o
- .debug_macro   0x0000000000000d56       0x6a ./Core/Src/main.o
- .debug_macro   0x0000000000000dc0      0x1df ./Core/Src/main.o
- .debug_macro   0x0000000000000f9f       0x28 ./Core/Src/main.o
- .debug_macro   0x0000000000000fc7       0x28 ./Core/Src/main.o
- .debug_macro   0x0000000000000fef       0x1c ./Core/Src/main.o
- .debug_macro   0x000000000000100b       0x22 ./Core/Src/main.o
- .debug_macro   0x000000000000102d       0xd9 ./Core/Src/main.o
- .debug_macro   0x0000000000001106     0x102d ./Core/Src/main.o
- .debug_macro   0x0000000000002133      0x11f ./Core/Src/main.o
- .debug_macro   0x0000000000002252     0xb86c ./Core/Src/main.o
- .debug_macro   0x000000000000dabe       0x6d ./Core/Src/main.o
- .debug_macro   0x000000000000db2b       0xda ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x00000000000000ce       0xda ./Core/Src/system_stm32f4xx.o
 
 .debug_line     0x0000000000000000      0xa90
  .debug_line    0x0000000000000000      0x4b7 ./Core/Src/main.o

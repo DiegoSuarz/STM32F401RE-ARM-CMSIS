@@ -1,17 +1,10 @@
-22:52:35 **** Incremental Build of configuration Debug for project 08_TIMERS ****
+22:45:11 **** Incremental Build of configuration Debug for project 08_TIMERS ****
 make -j2 all 
-arm-none-eabi-gcc "../Core/Src/delay_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Device/Include" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Core/Inc" -I"C:/Users/dg_su/OneDrive/Documentos/STM32/codigo/08_TIMERS/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/delay_timer.d" -MT"Core/Src/delay_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/delay_timer.o"
-arm-none-eabi-gcc -o "08_TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dg_su\OneDrive\Documentos\STM32\codigo\08_TIMERS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="08_TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 08_TIMERS.elf
- 
 arm-none-eabi-size   08_TIMERS.elf 
-arm-none-eabi-objdump -h -S  08_TIMERS.elf  > "08_TIMERS.list"
    text	   data	    bss	    dec	    hex	filename
    1072	      8	   1568	   2648	    a58	08_TIMERS.elf
 Finished building: default.size.stdout
  
-Finished building: 08_TIMERS.list
- 
 
-22:52:36 Build Finished. 0 errors, 0 warnings. (took 784ms)
+22:45:11 Build Finished. 0 errors, 0 warnings. (took 264ms)
 

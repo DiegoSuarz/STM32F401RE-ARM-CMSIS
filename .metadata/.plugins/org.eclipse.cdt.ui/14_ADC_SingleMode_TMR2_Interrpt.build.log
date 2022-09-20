@@ -1,0 +1,10 @@
+22:45:13 **** Incremental Build of configuration Debug for project 14_ADC_SingleMode_TMR2_Interrpt ****
+make -j2 all 
+arm-none-eabi-size   14_ADC_SingleMode_TMR2_Interrpt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3524	     12	   1572	   5108	   13f4	14_ADC_SingleMode_TMR2_Interrpt.elf
+Finished building: default.size.stdout
+ 
+
+22:45:14 Build Finished. 0 errors, 0 warnings. (took 258ms)
+

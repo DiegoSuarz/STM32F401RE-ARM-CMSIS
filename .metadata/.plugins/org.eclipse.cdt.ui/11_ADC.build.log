@@ -1,0 +1,9 @@
+21:01:12 **** Clean-only build of configuration Debug for project 11_ADC ****
+make -j2 clean 
+rm -rf ./Core/Startup/startup_stm32f401retx.d ./Core/Startup/startup_stm32f401retx.o
+rm -rf ./Core/Src/delay.d ./Core/Src/delay.o ./Core/Src/delay.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
+rm -rf 11_ADC.elf 11_ADC.list 11_ADC.map default.size.stdout
+ 
+
+21:01:13 Build Finished. 0 errors, 0 warnings. (took 682ms)
+

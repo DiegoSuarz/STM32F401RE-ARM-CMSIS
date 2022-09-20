@@ -1,0 +1,10 @@
+22:45:13 **** Incremental Build of configuration Debug for project 13_ADC_ScanMode_Interrupt ****
+make -j2 all 
+arm-none-eabi-size   13_ADC_ScanMode_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1608	     12	   1572	   3192	    c78	13_ADC_ScanMode_Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+22:45:13 Build Finished. 0 errors, 0 warnings. (took 256ms)
+
